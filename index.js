@@ -1,6 +1,28 @@
 /*chamando o inquirer */
-const { select } = require('@inquirer/prompts');
-const { log } = require('console');
+const { select, input } = require('@inquirer/prompts');
+
+let meta ={
+    value: "Tomar agua",
+    checked: false,
+}
+let metas = [meta]
+
+// cadastrando meta e verificando com length se há + de 1 caracter
+const  cadastrarMeta = async () =>{
+    const meta = await input({message: "Digite a meta:"})
+
+    if(meta.length == 0){
+        console.log("A meta não pode ser vazia");
+        return
+    }
+
+    metas.push(
+        { 
+            value: meta, 
+            checked: false
+        }
+    )
+}
 
 /*estrutura do menu*/
 const start = async() =>{
@@ -19,7 +41,7 @@ const start = async() =>{
                 name: "Listar metas",
                 value:"listar"
             },
-            
+
             {
                 name:"Sair",
                 value: "sair"
@@ -30,7 +52,9 @@ const start = async() =>{
        switch(opcao){
 
             case "cadastrar":
-                console.log("Vamos cadastrar");
+             await cadastrarMeta()
+             console.log(metas);
+             
                 break;
 
             case "listar":

@@ -35,6 +35,8 @@ Constantes
 
 = significa atribuição
 == significa igual
++ significa concatenação
+!= significa diferente
 
 
 ## Estruturas de dados
@@ -63,6 +65,7 @@ Constantes
 ## Condicinais
 
 - Swicth case
+iF/else
 
 ## Módulos em Node.Js;
 
