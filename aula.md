@@ -63,3 +63,12 @@ Constantes
 ## Condicinais
 
 - Swicth case
+
+## Módulos em Node.Js;
+
+Importaçãode módulos (require, CommonJS)
+Biblioteca 'inquirer' para criar prompts interativos
+
+## Programação assíncrona e promisses:
+
+- Uso de funções assíncronas (async/await)
