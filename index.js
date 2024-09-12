@@ -1,11 +1,11 @@
 /*chamando o inquirer */
-const { select, input } = require('@inquirer/prompts');
+const { select, input, checkbox } = require('@inquirer/prompts');
 
 let meta ={
     value: "Tomar agua",
     checked: false,
 }
-let metas = [meta]
+let metas = [ meta ]
 
 // cadastrando meta e verificando com length se há + de 1 caracter
 const  cadastrarMeta = async () =>{
@@ -22,6 +22,36 @@ const  cadastrarMeta = async () =>{
             checked: false
         }
     )
+}
+
+//Listando as metas
+const  listarMetas = async () =>{
+    const respostas = await checkbox({
+        message: "Use as setas para mudar de meta, o Espaço para marcar ou desmarcar e o Enter para finalizar essa etapa",
+        choices: [...metas],
+        instructions: false,
+    })
+
+    if(respostas.length == 0){
+        console.log("Nenhuma meta selecionada");
+        return
+    }
+
+    metas.forEach((m) => { // percorrendo as metas
+        m.checked = false // deixando elas falsas para que não haja erro
+    })
+
+// percorrendo as metas com foreach
+    respostas.forEach((resposta) =>{
+        const meta = metas.find((m) => { // procurando metas
+            return m.value == resposta // verifcando se a meta e o valor são os mesmos. Ex: meta = andar é igual a value: andar?
+        })
+
+        meta.checked = true //colocando como verdadeiro a comparação anterior
+    }) 
+
+    console.log("Meta(s) marcadas como concluída(s)");
+    
 }
 
 /*estrutura do menu*/
@@ -58,7 +88,7 @@ const start = async() =>{
                 break;
 
             case "listar":
-                    console.log("Vamos Listar");
+                   await listarMetas()
                     break;
 
             case "sair":
