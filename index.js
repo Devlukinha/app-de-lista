@@ -1,7 +1,7 @@
 const start = () =>{
 
     while(true){
-        
+
        let opcao = "sair";
 
        switch(opcao){
@@ -10,12 +10,12 @@ const start = () =>{
                 console.log("Vamos cadastrar");
                 break;
 
-                case "listar":
+            case "listar":
                     console.log("Vamos Listar");
                     break;
 
-                    case "sair":
-                        return    
+            case "sair":
+                   return    
        }
     }
 }
