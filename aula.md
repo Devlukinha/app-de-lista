@@ -35,3 +35,27 @@ Constantes
 
 = significa atribuição
 == significa igual
+
+
+## Estruturas de dados
+
+
+## Arrays:
+
+- Uma lista  que contém qualquer tipo de dado
+
+## Objetos:
+
+- Atributos e métodos
+- Criação e manipulação de objetos
+- Acesso a propriedade de objetos
+
+## Function
+
+- criar, passar argumentos
+- executar
+- arrow function / named function
+
+## Estrutura de repetição
+
+- While
