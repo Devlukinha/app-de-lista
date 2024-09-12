@@ -1,10 +1,23 @@
 const start = () =>{
-    let cont = 0
-    while(cont < 10){
-        console.log(cont);
-        cont++;
+
+    while(true){
         
-       
+       let opcao = "sair";
+
+       switch(opcao){
+
+            case "cadastrar":
+                console.log("Vamos cadastrar");
+                break;
+
+                case "listar":
+                    console.log("Vamos Listar");
+                    break;
+
+                    case "sair":
+                        return    
+       }
     }
 }
+
 start()

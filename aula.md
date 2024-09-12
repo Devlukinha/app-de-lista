@@ -59,3 +59,7 @@ Constantes
 ## Estrutura de repetição
 
 - While
+
+## Condicinais
+
+- Swicth case
