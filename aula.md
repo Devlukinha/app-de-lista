@@ -37,6 +37,7 @@ Constantes
 == significa igual
 + significa concatenação
 != significa diferente
+- spread operator ...
 
 
 ## Estruturas de dados
@@ -45,6 +46,7 @@ Constantes
 ## Arrays:
 
 - Uma lista  que contém qualquer tipo de dado
+- Métodos de arrays: push, [find, forEach, filter] -> HOF (Higher Order Functions)
 
 ## Objetos:
 
