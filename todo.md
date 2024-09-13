@@ -5,3 +5,5 @@
 - Marcar/Desmarcar metas como concluida
 - Remover metas
 - Sistema de mensagens
+- Sistema de mensagens
+-  Sistema de salvar metas em tempo real

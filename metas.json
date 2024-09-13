@@ -1,0 +1,14 @@
+[
+  {
+    "value": "andar todos dias",
+    "checked": true
+  },
+  {
+    "value": "meditar todos os dias",
+    "checked": false
+  },
+  {
+    "value": "ler todos os dias",
+    "checked": false
+  }
+]

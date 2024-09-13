@@ -74,6 +74,10 @@ iF/else
 Importaçãode módulos (require, CommonJS)
 Biblioteca 'inquirer' para criar prompts interativos
 
+## JSON
+
+- Javascript Object Notation
+
 ## Programação assíncrona e promisses:
 
 - Uso de funções assíncronas (async/await)
