@@ -37,7 +37,7 @@ Constantes
 == significa igual
 + significa concatenação
 != significa diferente
-- spread operator ...
+- spread operator 
 
 
 ## Estruturas de dados
